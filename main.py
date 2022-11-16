@@ -11,17 +11,17 @@ def menu():
 
             [1] - Desenhar um quadrado
             [2] - Desenhar triangulos
-            [2] - Desenhar outras formas
-            [3] - Sair
+            [3] - Desenhar outras formas
+            [4] - Sair
         ''')
     op = [1, 2, 3, 4]
 
     options = int(input("Escolha uma das opções:  "))
 
     if options == op[0]:
-        print("funciona")
+        teste()
     elif options == op[1]:
-        print("funcionando")
+        triangles()
     elif options == op[2]:
         square()
     elif options != op:
@@ -39,6 +39,27 @@ def square():
     for i in range(side):
         pen.forward(size)
         pen.left(ang)
+
+
+def triangles():
+    size_igual = int(input("Digite o valor para dois lados de mesmo tamanho: "))
+    base_ang = int(input("Digite o valor para dois angulos iguais: "))
+
+    teste = 180 - base_ang
+
+    pen.left(teste)
+    pen.forward(size_igual)
+    pen.left(base_ang*2)
+    pen.forward(size_igual)
+    pen.home()
+    print(teste)
+
+
+def teste():
+    pen.forward(50)
+    pen.left(85)
+    pen.forward(50)
+
 
 
 menu()
