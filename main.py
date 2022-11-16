@@ -21,7 +21,7 @@ def menu():
     if options == op[0]:
         print("funciona")
     elif options == op[1]:
-        print("funciona")
+        print("funcionando")
     elif options == op[2]:
         square()
     elif options != op:
