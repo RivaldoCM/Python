@@ -14,24 +14,24 @@ def menu():
             [3] - Desenhar outras formas
             [4] - Sair
         ''')
-    op = [1, 2, 3, 4]
+
 
     options = int(input("Escolha uma das opções:  "))
 
-    if options == op[0]:
-        teste()
-    elif options == op[1]:
-        triangles()
-    elif options == op[2]:
-        square()
-    elif options != op:
+    if options == 1:
+        retangulo()
+    elif options == 2:
+        isosceles()
+    elif options == 3:
+        escaleno()
+    else:
         print("Digite uma opção correta animal. ")
         time.sleep(2)
         menu()
+    pass
 
 
 def square():
-    print("fazendo")
     side = int(input("Digite o numero de lados:  "))
     size = int(input("Digite o tamanho do lado:  "))
     ang = 360/side
@@ -41,25 +41,40 @@ def square():
         pen.left(ang)
 
 
-def triangles():
+def isosceles():
     size_igual = int(input("Digite o valor para dois lados de mesmo tamanho: "))
     base_ang = int(input("Digite o valor para dois angulos iguais: "))
 
-    teste = 180 - base_ang
+    #CONVERTENDO PARA O ANGULO CORRETO.
+    convert_ang = 180 - base_ang
 
-    pen.left(teste)
+    pen.left(convert_ang)
     pen.forward(size_igual)
     pen.left(base_ang*2)
     pen.forward(size_igual)
     pen.home()
-    print(teste)
 
 
-def teste():
-    pen.forward(50)
-    pen.left(85)
-    pen.forward(50)
+def retangulo():
+    size1 = int(input("Digite o tamanho do lado oposto a hipotenusa: "))
+    base_size = int(input("Digite o valor para a base do triangulo: "))
 
+    pen.right(90)
+    pen.forward(size1)
+    pen.left(90)
+    pen.forward(base_size)
+    pen.home()
+
+
+def escaleno():
+    pen.speed(1)
+
+    pen.forward(100)
+    pen.left(163)
+    pen.forward(200)
+    pen.left(143)
+    pen.home()
+    pen.hideturtle()
 
 
 menu()

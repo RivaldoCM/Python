@@ -8,7 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../Formas geometricas/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Formas geometricas/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Formas geometricas/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/Isosceles_Triangle.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Rocketseat/reactjs/01-github-explorer/node_modules/encoding/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -17,6 +16,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +44,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/Triangles" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
